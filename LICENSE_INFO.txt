@@ -1,0 +1,53 @@
+VRChat Mute Controller - License Information
+===========================================
+
+This application is licensed under the MIT License.
+
+THIRD-PARTY LIBRARIES
+=====================
+
+This application uses the following third-party libraries:
+
+1. customtkinter (MIT License)
+   - Modern UI library for Python
+   - Copyright (c) Tom Schimansky
+
+2. python-osc (Unlicense - Public Domain)
+   - Open Sound Control library
+   - No restrictions on use
+
+3. keyboard (MIT License)
+   - Global hotkey detection library
+   - Copyright (c) BoppreH
+
+4. pystray (LGPL-3.0)
+   - System tray integration library
+   - Copyright (c) Moses Palmér
+   - Note: Used as a separate library, not modified
+
+5. Pillow (MIT-CMU License)
+   - Python Imaging Library
+   - Copyright (c) Jeffrey A. Clark and contributors
+
+6. setuptools (MIT License)
+   - Python package management
+   - Copyright (c) Python Packaging Authority
+
+7. PyInstaller (GPL-2.0 with exception)
+   - Python to executable converter
+   - Special exception allows commercial use
+
+IMPORTANT NOTES
+===============
+
+- All libraries are used as-is without modification
+- LGPL library (pystray) is used as a separate component
+- PyInstaller's special exception allows commercial distribution
+- This application and its source code are available under MIT License
+
+For complete license texts, visit:
+- MIT License: https://opensource.org/licenses/MIT
+- LGPL-3.0: https://www.gnu.org/licenses/lgpl-3.0.html
+- Unlicense: https://unlicense.org/
+
+Copyright (c) 2025 VRChat Mute Controller
