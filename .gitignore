@@ -1,0 +1,8 @@
+/.venv
+/build
+/build_exe.bat
+/dist
+/icon.ico
+/requirements.txt
+/start.bat
+/VRChat_Mute_Controller.spec
