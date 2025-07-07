@@ -28,7 +28,7 @@ VRChatの設定で、オーディオ→マイクの動作の設定を確認し�
 ### 2. ショートカットの設定
 
 1. ショートカット欄に組み合わせを入力
-   - デフォルト: `f12`
+   - デフォルト: `ctrl+f12`
    - カスタム例: `ctrl+shift+m`, `alt+f1`, `ctrl+alt+t`
 2. 「設定を保存」をクリック
 3. アプリケーションが自動的にショートカットの監視を開始します
@@ -46,7 +46,7 @@ VRChatの設定で、オーディオ→マイクの動作の設定を確認し�
 
 ```json
 {
-  "mute_toggle_shortcut": "f12"
+  "mute_toggle_shortcut": "ctrl+f12"
 }
 ```
 
@@ -134,6 +134,7 @@ Windows起動時に自動でアプリケーションを起動したい場合：
 
 ショートカットは以下の形式で入力してください：
 
+- `ctrl+f12` (Ctrl + F12) - デフォルト
 - `ctrl+shift+m` (Ctrl + Shift + M)
 - `alt+f1` (Alt + F1)
 - `ctrl+alt+t` (Ctrl + Alt + T)

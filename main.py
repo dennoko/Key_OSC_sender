@@ -110,14 +110,14 @@ class VRChatMuteController:
         
         self.mute_toggle_entry = ctk.CTkEntry(
             shortcut_frame,
-            placeholder_text="例: f12, ctrl+shift+m",
+            placeholder_text="例: ctrl+f12, ctrl+shift+m",
             font=(self.font_family, self.font_size),
             width=400
         )
         self.mute_toggle_entry.pack(padx=10, pady=(0, 10))
         
         # デフォルト値を設定
-        self.mute_toggle_entry.insert(0, "f12")
+        self.mute_toggle_entry.insert(0, "ctrl+f12")
         
         # ボタンフレーム
         button_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
@@ -299,7 +299,7 @@ class VRChatMuteController:
             self.update_status("設定ファイルが見つかりません - デフォルト値を使用")
             # デフォルト値を設定
             self.mute_toggle_entry.delete(0, 'end')
-            self.mute_toggle_entry.insert(0, "f12")
+            self.mute_toggle_entry.insert(0, "ctrl+f12")
             # ショートカットを設定（遅延実行）
             self.window.after(100, self.reload_shortcuts)
             return
