@@ -326,25 +326,30 @@ class VRChatMuteController:
             # 既存のショートカットをクリア
             try:
                 keyboard.clear_all_hotkeys()
-            except:
-                # エラーが発生した場合は無視
-                pass
-            
+            except AttributeError as e:
+                self.update_status(f"ホットキークリアエラー: {str(e)}")
+                print(f"ホットキークリアエラー: {str(e)}")
+        
             # 新しいショートカットを設定
             mute_toggle = self.mute_toggle_entry.get().strip()
-            
+        
             if mute_toggle:
                 try:
                     keyboard.add_hotkey(mute_toggle, self.mute_toggle)
                     self.update_status("ショートカットを再設定しました")
                 except Exception as e:
                     self.update_status(f"ショートカット設定エラー: {str(e)}")
+                    print(f"ショートカット設定エラー: {str(e)}")
             else:
                 self.update_status("ショートカットが設定されていません")
-            
+        
+            # 即時反映のために状態を更新
+            self.update_status("ショートカット設定が反映されました")
+        
         except Exception as e:
             self.update_status(f"ショートカット設定エラー: {str(e)}")
             messagebox.showerror("エラー", f"ショートカットの設定に失敗しました: {str(e)}")
+            print(f"ショートカット設定エラー: {str(e)}")
     
     def on_closing(self):
         """ウィンドウを閉じる時の処理"""
